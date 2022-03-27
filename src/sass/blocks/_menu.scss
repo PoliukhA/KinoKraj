@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    align-items: center;
+    height: 130px;
+    padding: 0 200px;
+    background-color: #23282d;
+    &__left-block {
+        display: flex;
+        justify-content: space-between;
+        min-width: 600px;
+    }
+    &__links {
+        display: flex;
+        align-items: center;
+    }
+    &__link {
+        margin-right: 45px;
+        font-size: 18px;
+        color: #fff;
+        // color: #eaaf5d;
+        &:hover {
+            color: #dc8c1c;
+        }
+    }
+    &__logo {
+        max-width: 250px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.divider {
+    height: 3px;
+    background-color: #dc8c1c;
+}

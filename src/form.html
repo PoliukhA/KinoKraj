@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nowy Film</title>
+</head>
+<body>
+    <div><a href="index.html">home</a>
+        <form action="" method="post">
+            <input required id="title" placeholder="Tytuł filmu" name="title" type="text">
+            <input id="author" placeholder="Autor" name="author" type="text">
+            <label for="year">Rok produkcji:</label>
+            <input id="year" name="year" type="date">
+            <select required name="available" id="available">
+                <option value="true">Dostępny</option>
+                <option value="false">Wypożyczony</option>
+            </select>
+            <input id="descr" placeholder="Opis" name="descr" type="text">
+            <button type="submit">Wyślij</button>
+        </form>
+    </div>
+
+    <script src="js/form.js"></script>
+</body>
+</html>

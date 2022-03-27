@@ -1,0 +1,27 @@
+.catalog {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    &-item{
+        display: flex;
+        width: calc(50% - 40px);
+        padding: 15px 0;
+        margin: 0 10px;
+        border-bottom: 1px solid #d1d5da;
+        &__poster {
+            display: block;
+            flex-shrink: 0;
+            width: 200px;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        span {
+            font-weight: bold;
+        }
+        &__info {
+            div {
+                padding: 16px 0;
+            }
+        }
+    }
+}

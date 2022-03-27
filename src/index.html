@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KinoKraj</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__left-block">
+            <div class="header__logo">
+                <img src="icons/logo2.png" alt="Logo">
+            </div>
+            <nav class="header__links">
+                <a href="index.html" class="header__link">Lista filmów</a>
+                <a href="form.html" class="header__link">Dodaj nowy film</a>
+            </nav>
+        </div>
+    </header>
+    <div class="divider"></div>
+
+    <div class="container">
+        <div class="catalog">
+            <div class="catalog-item">
+                <img src="icons/0.jpg" class="catalog-item__poster" alt="poster">
+                <div class="catalog-item__info">
+                    <h3 class="catalog-item__title">Batman</h3>
+                    <div class="catalog-item__descr">
+                        Batman i James Gordon stawiają czoła nieobliczalnemu Człowiekowi-Zagadce w skorumpowanym Gotham City.
+                    </div>
+                    <div class="catalog-item__author"><span>Reżyseria: </span>Matt Reeves</div>
+                    <div class="catalog-item__year"><span>Premiera: </span>4-marca-2002</div>
+                    <div class="catalog-item__available">Dostępny</div>
+                    <div class="catalog__btns">
+                        <button type="button" value="${id}" class="btn btn_info">info</button>
+                        <button type="button" value="${id}" class="btn btn-delete">delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
