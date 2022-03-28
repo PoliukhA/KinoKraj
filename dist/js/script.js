@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
                 
                 movieElement.className = "catalog__item";
 
-                movieElement.innerHTML = `<img src="icons/${poster}.jpg" class="catalog__item-poster" alt="poster">
+                movieElement.innerHTML = `<img src="dist/icons/${poster}.jpg" class="catalog__item-poster" alt="poster">
                                             <div class="catalog__item-info">
                                                 <div class="catalog__item-header">
                                                     <h3 class="catalog__item-title">${title} |&nbsp;</h3>
