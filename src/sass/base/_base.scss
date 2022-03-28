@@ -13,3 +13,21 @@
 a {
     text-decoration: none;
 }
+
+.btn {
+    padding: 5px;
+    text-transform: uppercase;
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    &:hover {
+        background-color: #dc8c1c;
+        transition: 1s;
+    }
+    &_post {
+        font-size: 15px;
+    }
+}

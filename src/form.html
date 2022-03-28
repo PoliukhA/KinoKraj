@@ -1,25 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nowy Film</title>
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <div><a href="index.html">home</a>
-        <form action="" method="post">
-            <input required id="title" placeholder="Tytuł filmu" name="title" type="text">
-            <input id="author" placeholder="Autor" name="author" type="text">
-            <label for="year">Rok produkcji:</label>
-            <input id="year" name="year" type="date">
-            <select required name="available" id="available">
-                <option value="true">Dostępny</option>
-                <option value="false">Wypożyczony</option>
-            </select>
-            <input id="descr" placeholder="Opis" name="descr" type="text">
-            <button type="submit">Wyślij</button>
-        </form>
+    <header class="header">
+        <div class="header__left-block">
+            <div class="header__logo">
+                <img src="icons/logo2.png" alt="Logo">
+            </div>
+            <nav class="header__links">
+                <a href="index.html" class="header__link">Lista filmów</a>
+                <a href="form.html" class="header__link">Dodaj nowy film</a>
+            </nav>
+        </div>
+    </header>
+    <div class="divider"></div>
+
+    <div class="form">
+        <div class="container">
+            <div class="form__wrapper">
+                <div class="form__title">
+                    <h1>Dodaj nowy film</h1>
+                </div>
+                <form class="post-form" action="" method="post">
+                    <div class="post-form__right">
+                        <input required id="title" name="title" type="text" placeholder="Tytuł filmu">
+                        <input id="author" placeholder="Autor" name="author" type="text">
+                        <label for="year">Rok produkcji:</label>
+                        <input id="year" name="year" type="date">
+                        <label for="available">Dostępność:</label>
+                        <select required name="available" id="available">
+                            <option value="true">Dostępny</option>
+                            <option value="false">Wypożyczony</option>
+                        </select>
+                    </div>
+                    <div class="post-form__left">
+                        <textarea id="descr" name="descr" maxlength="255" wrap="soft" placeholder="Fabuła:"></textarea>
+                    </div>
+                    <div class="post-form__btn">
+                        <button class="btn btn_post" type="submit">Wyślij</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
     <script src="js/form.js"></script>

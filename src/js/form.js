@@ -47,7 +47,11 @@ document.addEventListener('DOMContentLoaded', function(event) {
 			},
 			body: JSON.stringify(newObj)
 		});
-		
+		if (response.ok){
+			alert('Zapisano!')
+		} else {
+			alert('Nie udało się zapisać dane')
+		}
 		form.reset();
 		}
 	}
